@@ -82,7 +82,7 @@ Vagrant.configure("2") do |config|
 config.vm.define "server" do |server|
 
   server.vm.host_name = 'server'
-  server.vm.network :private_network, ip: "10.0.0.41"
+  server.vm.network :private_network, ip: "192.168.56.0/21"
 
   server.vm.provider "virtualbox" do |vb|
     vb.memory = "1024"
@@ -103,7 +103,7 @@ config.vm.define "server" do |server|
 
   config.vm.define "client" do |client|
     client.vm.host_name = 'client'
-    client.vm.network :private_network, ip: "10.0.0.40"
+    client.vm.network :private_network, ip: "192.168.56.0/21"
     client.vm.provider :virtualbox do |vb|
       vb.memory = "1024"
       vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]

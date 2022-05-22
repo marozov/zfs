@@ -22,5 +22,5 @@ modprobe zfs
 cd /usr/share/bash-completion/completions/
 curl -O https://raw.githubusercontent.com/openzfs/zfs/zfs-0.8-release/contrib/bash_completion.d/zfs
 chmod +x zfs
-
-
+sudo -i && /sbin/modprobe zfs
+zpool create mypool sdb sdc
