@@ -430,8 +430,8 @@ Saving to: ‘otus_task2.file’
 2022-05-21 08:45:16 (6.44 MB/s) - ‘otus_task2.file’ saved [5432736/5432736]
 [1]+ Done wget -O otus_task2.file https://drive.google.com/u/0/uc?id=1gH8gCL9y7Nd5Ti3IRmplZPF1XjzxeRAG 
 ```
-
 Восстановим файловую систему из снапшота: zfs receive otus/test@today < otus_task2.file
+
 Далее, ищем в каталоге /otus/test файл с именем “secret_message”:
 ```
 [root@zfs ~]# find /otus/test -name "secret_message" 
