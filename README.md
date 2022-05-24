@@ -434,7 +434,8 @@ Saving to: ‘otus_task2.file’
 Восстановим файловую систему из снапшота: zfs receive otus/test@today < otus_task2.file
 Далее, ищем в каталоге /otus/test файл с именем “secret_message”:
 ```
-[root@zfs ~]# find /otus/test -name "secret_message" /otus/test/task1/file_mess/secret_message
+[root@zfs ~]# find /otus/test -name "secret_message" 
+/otus/test/task1/file_mess/secret_message
 ```
 Смотрим содержимое найденного файла:
 ```
