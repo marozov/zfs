@@ -1,11 +1,10 @@
-# Все дальнейшие действия были проверены при использовании
+Все дальнейшие действия были проверены при использовании
 vagrant -v
 Vagrant 2.2.19
-#
+
 vboxmanage --version
 6.1.34r150636
-#
-#CentOS Linux release 8.5 из Vagrant cloud
+CentOS Linux release 8.5 из Vagrant cloud
 cat /etc/redhat-release
 CentOS Linux release 8.5.2111
 
@@ -16,8 +15,8 @@ git@github.com:marozov/zfs.git
 
 Проверяем конфиг Vagranta
 
-
-"# -*- mode: ruby -*-
+```
+# -*- mode: ruby -*-
 # vim: set ft=ruby :
 disk_controller = 'IDE' # MacOS. This setting is OS dependent. Details https://github.com/hashicorp/vagrant/issues/8105
 MACHINES = { 
@@ -107,8 +106,7 @@ SHELL
 		end 
 	end
 end
-"
-
+```
 Результатом выполнения команды 
 vagrant up станет созданная виртуальная машина, 
 с 8 дисками и уже установленным и готовым к работе ZFS.
