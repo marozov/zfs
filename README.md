@@ -17,7 +17,7 @@ git@github.com:marozov/zfs.git
 Проверяем конфиг Vagranta
 
 
-# -*- mode: ruby -*-
+"# -*- mode: ruby -*-
 # vim: set ft=ruby :
 disk_controller = 'IDE' # MacOS. This setting is OS dependent. Details https://github.com/hashicorp/vagrant/issues/8105
 MACHINES = { 
@@ -107,7 +107,7 @@ SHELL
 		end 
 	end
 end
-
+"
 
 Результатом выполнения команды 
 vagrant up станет созданная виртуальная машина, 
